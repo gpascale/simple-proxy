@@ -5,6 +5,7 @@ const app = express();
 app.get('/', (req, res) => {
   console.log("proxying to " + req.query.url);
   request(req.query.url, (error, response, body) => {
+      res.setHeader('Access-Control-Allow-Origin', '*');
     if (!error && response.statusCode == 200) 
       res.status(200).send(body);
     else
