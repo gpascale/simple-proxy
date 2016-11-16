@@ -1,0 +1,39 @@
+{
+  "name": "simple-proxy",
+  "version": "1.0.0",
+  "description": "Simple HTTP proxy for dealing with CORS during development",
+  "main": "app.js",
+  "scripts": {
+    "start": "PORT=4567 node app.js",
+    "dev": "npm-watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gpascale/simple-proxy.git"
+  },
+  "keywords": [
+    "proxy",
+    "http",
+    "node",
+    "js",
+    "javascript"
+  ],
+  "author": "Greg Pascale (greg.pascale@gmail.com)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gpascale/simple-proxy/issues"
+  },
+  "homepage": "https://github.com/gpascale/simple-proxy#readme",
+  "dependencies": {
+    "express": "^4.14.0",
+    "request": "^2.78.0"
+  },
+  "devDependencies": {
+    "npm-watch": "^0.1.6",
+    "url": "^0.11.0"
+  },
+  "watch": {
+    "start": "*.js"
+  }
+}
