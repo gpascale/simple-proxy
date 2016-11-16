@@ -12,5 +12,5 @@ app.get('/', (req, res) => {
   });
 });
 
-const port = process.env.PORT || 4000
+const port = process.env.PORT || 4567
 app.listen(port, () => console.log("simple-proxy listening on port " + port + "..."));
