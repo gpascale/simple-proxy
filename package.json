@@ -4,7 +4,7 @@
   "description": "Simple HTTP proxy for dealing with CORS during development",
   "main": "simple-proxy.js",
   "scripts": {
-    "start": "PORT=4567 node simple-proxy.js",
+    "start": "PORT=4567 pm2 start simple-proxy.js",
     "dev": "npm-watch",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
